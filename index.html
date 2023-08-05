@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- ! nav bar start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container py-4">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-poo-storm fa-2x text-info"></i>
+                <ul class="logo float-end list-unstyled ps-2 text-white">
+                    <li>Weather</li>
+                    <li>tagline goes here</li>
+                </ul>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white active px-4 py-1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white px-4 py-1" href="#">News</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white px-4 py-1" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white px-4 py-1" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white px-4 py-1" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ! nav bar end -->
+
+
+    <!-- ! search and show weather -->
+    <section class="py-5" id="search-sec">
+        <div class="container my-3">
+            <div class="position-relative ">
+                <input type="text" id="search" placeholder="    Find your location..."
+                    class="search-input w-100 border rounded-5 py-3">
+                <input type="submit" class="search-button position-absolute border rounded-5 text-white" value="find">
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="parent row text-white gx-0 rounded overflow-hidden">
+                <div class="col-lg-4">
+                    <div class="ch-1 d-flex justify-content-between px-2">
+                        <p class="fstDay opacity-75">Friday</p>
+                        <p class="fstDate opacity-75">4 August</p>
+                    </div>
+                    <div class="child1 h-100 ps-3">
+                        <h4 class="city opacity-75"></h4>
+                        <div class="d-flex justify-content-around align-items-center py-5">
+                            <h2 class="fa-5x"><span class="temp text-info"></span><sup class="px-2">o</sup>C</h2>
+                            <img src="" class="iconTemp">
+                        </div>
+                        <p class="text-info condition">clear</p>
+                        <ul class="d-flex list-unstyled w-75 justify-content-around">
+                            <li><i class=""></i>20%</li>
+                            <li><i class=""></i>18km/h</li>
+                            <li><i class=""></i>east</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ch-2 d-flex justify-content-center">
+                        <p class="opacity-75">Friday</p>
+                    </div>
+                    <div class="child2 h-100">
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="ch-3 d-flex justify-content-center">
+                        <p class="opacity-75">Friday</p>
+                    </div>
+                    <div class="child3 h-100">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! search and show weather end-->
+
+    <!-- !contact -->
+    <section id="contact" class="py-5 text-white">
+        <div class="container py-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="w-50">
+                    <input type="text" id="search" placeholder="    enter your email..."
+                        class="search-input w-100 border rounded-5 py-3">
+                    <input type="submit" class="search-button position-absolute border rounded-5 text-white"
+                        value="subscribe">
+                </div>
+
+                <div class="socials w-25">
+                    <ul class="list-unstyled d-flex justify-content-around">
+                        <li><i class=" fa-brands fa-facebook text-info fa-2x"></i></li>
+                        <li><i class=" fa-brands fa-twitter text-info fa-2x"></i></li>
+                        <li><i class=" fa-brands fa-google text-info fa-2x"></i></li>
+                        <li><i class=" fa-brands fa-pinterest text-info fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- !contact end-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
